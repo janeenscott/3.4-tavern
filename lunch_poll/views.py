@@ -17,6 +17,8 @@ class DetailView(TemplateView):
     # view should show details of lunch,
     # along with a list of locations
 
+    template_name = 'lunch_poll/detail.html'
+
     pass
 
 
