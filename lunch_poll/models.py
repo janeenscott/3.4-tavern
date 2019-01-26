@@ -7,6 +7,13 @@ class Lunch(models.Model):
     user = models.CharField(max_length=100)
     date = models.DateField()
 
+    def __str__(self):
+        return self.nickname
 
 class Location(models.Model):
-    lunch = models.ForeignKey(to Lunch)
+    lunch = models.ForeignKey(Lunch, on_delete=models.CASCADE)
+    votes = models.IntegerField()
+
+
+    def __str__(self):
+        return self.lunch
