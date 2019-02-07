@@ -1,0 +1,39 @@
+/*
+$nav-color: #bbb;
+$red: red;
+$sans-serif: Helvetica, Arial;
+
+    //This is how you create a variable in sass -- you have to use $ at the front
+
+
+nav {
+    background-color: $nav-color;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+
+    a{
+        color: red;
+        &:hover{
+            // & shows that we're still talking about the state of the element we are on, not nesting
+            color: $black;
+        }
+    }
+}
+
+nav.small{
+    padding: 5px 10px;
+
+    img{
+        height: 40px;
+    }
+}
+
+.hero{
+    margin-top: 150px;
+    display: inline-block;
+}
+
+*/
+
+/*# sourceMappingURL=styles.css.map */

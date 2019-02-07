@@ -30,7 +30,7 @@ class ResultsView(TemplateView):
     pass
 
 
-class VoteView(TemplateView):
+class VoteView(View):
 
     # view should recieve a POST request from the form on
     # Detail page and increase vote count for selected location

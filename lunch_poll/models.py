@@ -11,7 +11,7 @@ class Lunch(models.Model):
         return self.nickname
 
 class Location(models.Model):
-    lunch = models.ForeignKey(Lunch, on_delete=models.CASCADE)
+    lunch = models.ForeignKey('lunch_poll.Lunch', on_delete=models.CASCADE)
     votes = models.IntegerField()
 
 
