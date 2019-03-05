@@ -44,6 +44,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     'tavernlunch.herokuapp.com',
+    '127.0.0.1'
 
 ]
 
