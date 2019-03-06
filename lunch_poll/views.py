@@ -74,6 +74,6 @@ class VoteView(View):
         selected_lunch_location.votes += 1
         selected_lunch_location.save()
 
-        results_url = reverse('lunch_poll: results', args=(vote.pk,))
+        results_url = reverse('lunch_poll:results', args=(vote.pk,))
 
         return HttpResponseRedirect(results_url)
