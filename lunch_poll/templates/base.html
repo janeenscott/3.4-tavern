@@ -14,34 +14,54 @@
 </head>
 <body>
 
-<nav id="primary-nav" class="small">
-    <a href="#">Main</a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Peas On Earth</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-    <ul class="navbar-nav">
-
-        <li class="float-left">
-            Lunch Not War
-        </li>
-
-        <li class="float-right">
-            Create Poll
-        </li>
-
-    </ul>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Create Poll</a>
+            </li>
+        </ul>
+    </div>
 </nav>
 
-<div class='body'>
-    <div class="container hero">
+            <!--
+            <nav id="primary-nav" class="small">
+                <a href="#">Main</a>
+
+                <ul class="navbar-nav">
+
+                    <li class="float-left">
+                        Lunch Not War
+                    </li>
+
+                    <li class="float-right">
+                        <a href="#">Create Poll</a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <div class='body'>
+                <div class="container hero">
+
+                </div>
+            -->
+            {% block content %}
+            {% endblock %}
 
     </div>
 
-    {% block content %}
-    {% endblock %}
-
-</div>
-
-{% load static %}
-<script type="text/javascript" src="{% static "main.js" %}"></script>
+    {% load static %}
+    <script type="text/javascript" src="{% static "main.js" %}"></script>
 
 </body>
 </html>
