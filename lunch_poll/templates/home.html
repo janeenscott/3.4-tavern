@@ -2,14 +2,16 @@
 
 
 {% block content %}
+    <div class="poll-selection">
     <h1 class="text-center">Make Lunch Not War</h1>
+    <h2 class="text-center">Who are you having lunch with?</h2>
 
     {% if latest_lunches %}
         <ul class="list-group">
             {# Loop over the latest_contests list and get each contest #}
             {% for lunch in latest_lunches %}
                 {# We can build a url with the name of our path using the url template tag #}
-                <li class="center link-adjust"><a href="{% url 'lunch_poll:detail' lunch.id %}">{{ lunch.nickname }}</a>
+                <li class="text-center link-adjust"><a href="{% url 'lunch_poll:detail' lunch.id %}">{{ lunch.nickname }}</a>
                 </li>
             {% endfor %}
         </ul>
@@ -18,6 +20,7 @@
             <footer class="fixed-button">
                 <p class="text-muted">Nothing to see here.</p>
             </footer>
+        </div>
         </div>
     {% endif %}
 {% endblock %}

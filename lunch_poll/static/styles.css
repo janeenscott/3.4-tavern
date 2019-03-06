@@ -1,3 +1,37 @@
+body {
+  background-image: url("images/restaurant.jpg");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+}
+
+.poll-selection {
+  background: white;
+  padding: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 25px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.voting {
+  background: white;
+  padding: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 25px;
+}
+
+.vote-button {
+  text-align: center;
+}
+
 /*
 $nav-color: #bbb;
 $red: red;

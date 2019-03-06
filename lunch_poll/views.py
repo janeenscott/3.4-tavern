@@ -14,9 +14,7 @@ class HomeView(TemplateView):
     template_name = 'home.html'
 
     def get_context_data(self, **kwargs):
-        lunches = Lunch.objects.filter(
-            date__lte=timezone.now()
-        ).order_by('date')[:5]
+        lunches = Lunch.objects.order_by('date')[:5]
 
         context = {
             'latest_lunches': lunches

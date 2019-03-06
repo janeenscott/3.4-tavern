@@ -1,11 +1,54 @@
 
+body{
+  background-image: url("images/restaurant.jpg");
+  height: 100%;
+  //opacity: 0.7;
+  //filter: alpha(opacity=50);
 
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+   background-attachment: fixed;
 
+}
 
+//.overlay{
+//    z-index: 1;
+//    height: 100%;
+//    width: 100%;
+//    position: fixed;
+//    overflow: auto;
+//    top: 0px;
+//    left: 0px;
+//    background: rgba(0, 0, 0, 0.1); /*can be anything, of course*/
+//}
 
+.poll-selection{
+  background: white;
+  padding: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 25px;
+  //background-color: rgba(0, 0, 0, 0.3)
+}
 
+ul {
+  list-style-type: none;
+}
 
+.voting{
+  background: white;
+  padding: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+  margin-top: 25px;
+}
 
+.vote-button{
+  text-align: center;
+
+}
 
 
 
