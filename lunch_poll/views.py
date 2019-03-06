@@ -61,7 +61,7 @@ class ResultsView(TemplateView):
 
 class VoteView(View):
 
-    # view should recieve a POST request from the form on
+    # view should receive a POST request from the form on
     # Detail page and increase vote count for selected location
 
     def post(self, reqest, **kwargs):
